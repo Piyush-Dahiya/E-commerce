@@ -4,11 +4,25 @@ var productId = urlParams.get('productId');
 document.addEventListener('DOMContentLoaded', function() {
  myCartMethod();
 });
+function updateCartMessage() {
+    alert("juju");
+  /*   let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let messageDiv = document.getElementById('cart-message');
 
+    if (cart.length > 0) {
+        let itemText = cart.length === 1 ? "item" : "items"; // Singular or plural
+        messageDiv.innerHTML = `${cart.length} ${itemText} (${cart.join(", ")}) have been added to the cart.`;
+    } else {
+        messageDiv.innerHTML = ""; // Clear message if cart is empty
+    }*/
+}
 function myCartMethod() {
   console.log("myCartMethod");
   // Your code logic for the cart page here
   console.log('Product ID:', productId);
+updateCartMessage();
+ 
+ 
 let html = `<div class="img-section">
     <img src="%mainImage%" alt="" id="MainImg">
     <div class="small-images">
