@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
  myCartMethod();
 });
 function updateCartMessage() {
-    alert("juju");
+    alert("view item");
   /*   let cart = JSON.parse(localStorage.getItem('cart')) || [];
     let messageDiv = document.getElementById('cart-message');
 
